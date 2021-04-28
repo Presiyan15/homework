@@ -21,6 +21,7 @@ int main()
 
     int guess = 0;
     int counter = 1;
+    int replacer = num;
 
     while (guess != num) {
         cout << "Enter a guess between "<<downBorder<<" and "<<upBorder;
@@ -35,8 +36,8 @@ int main()
         else if (counter==6){
 
             int timesOfCircles = 0;
-            while(guess!=0){
-                int currentFactor = guess%10;
+            while(replacer!=0){
+                int currentFactor = replacer%10;
                 if (currentFactor==0||currentFactor==6||currentFactor==9)
                 {
 
@@ -47,11 +48,11 @@ int main()
 
                 }
 
-                guess -= currentFactor;
-                guess /= 10;
+
+                replacer /= 10;
             }
-            cout<<"You don't have any tries left, your last number has "<<timesOfCircles<<" circles";
-            break;
+            cout<<"My number has "<<timesOfCircles<<" circles\n\n";
+
         }
         else{
                        if (guess > num) {
