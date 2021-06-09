@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    cout<<"Hello, this is my Toy game. If you want to understand how much will your constructor cost, please type its height and width. After that you will have to type how many cubes are there."<<endl;
+    cout<<"Hello, this is my Toy game. If you want to understand how much your constructor costs, please type its height and width. After that you will have to type how many cubes are there."<<endl;
     cout<<"Type height and width: ";
 
     int height, width;
@@ -52,7 +52,7 @@ int main()
         }
 
     }
-    cout<<"The present costs: "<<sumArea<<"lv.";
+    cout<<"The constructor costs: "<<sumArea<<"lv.";
 
 
     return 0;
